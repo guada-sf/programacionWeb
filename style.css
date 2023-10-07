@@ -1,19 +1,1 @@
-/* es para el estilo de la web */
-*{border: 1px}
 
-p{
-    color: blue;
-}
-
-/* selector { propiedad:valor;} */
-
-h1{background-color: red; padding: 20px}
-
-/* todo CSS funciona con cajas */
-/* 4 partes: contenido - padding - borde - margen */
-/* dos tipos de caja: 
-block: ocupan todo el ancho
-inline: ocupan el tamaño del contenido
-*/
-
-#imagen-grande{width: 10%;}
