@@ -1,13 +1,22 @@
 .custom-image {
-    width: 100%; /* Establece el ancho deseado */
-    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
-    /* O, si deseas fijar la altura en lugar de ajustarla automáticamente:
-    height: 200px; */
-    display: block; /* Convertir la imagen en un elemento de bloque */
-    margin: 0 auto; /* Centrar horizontalmente en su contenedor */
-  }
+  width: 100%; /* Establece el ancho deseado */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  /* O, si deseas fijar la altura en lugar de ajustarla automáticamente:
+  height: 200px; */
+  display: block; /* Convertir la imagen en un elemento de bloque */
+  margin: 0 auto; /* Centrar horizontalmente en su contenedor */
+}
 
 #carouselExampleIndicators {
-    margin-top: 50px; /* Ajusta el valor según tus necesidades */
+  margin-top: 50px; /* Ajusta el valor según tus necesidades */
+}
+
+.column-img {
+  width: 30%; /* Establece el ancho deseado */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+
+.products{
+  background-color: aquamarine;
 }
 
