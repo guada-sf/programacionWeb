@@ -20,3 +20,8 @@
   background-color: aquamarine;
 }
 
+.aboutus-img {
+  width: 80%; /* Establece el ancho deseado */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+
