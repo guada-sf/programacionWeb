@@ -1,4 +1,4 @@
-.custom-image {
+.slide-image {
   width: 100%; /* Establece el ancho deseado */
   height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
   /* O, si deseas fijar la altura en lugar de ajustarla automáticamente:
@@ -7,7 +7,7 @@
   margin: 0 auto; /* Centrar horizontalmente en su contenedor */
 }
 
-#carouselExampleIndicators {
+#carousel-home {
   margin-top: 50px; /* Ajusta el valor según tus necesidades */
 }
 

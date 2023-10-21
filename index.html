@@ -11,7 +11,7 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #e3f2fd;">
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #f9fbfd;">
             <div class="container-fluid">
               <a class="navbar-brand active" aria-current="page" href="index.html">ProMed Equipos Médicos</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +23,7 @@
                     <a class="nav-link" href="#especialidades">Especialidades</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#sobreNosotros">Sobre Nosotros</a>
+                    <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#contacto">Contacto</a>
@@ -33,28 +33,32 @@
             </div>
         </nav>
         
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <div id="carousel-home" class="carousel slide" data-ride="carousel" data-interval="4000">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="3" aria-label="Slide 4"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="images/Diseño sin título (2).jpg" class="custom-image" alt="...">
+              <img src="images/slide-perceptpc.jpg" class="slide-image" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="images/Diseño sin título (2).jpg" class="custom-image" alt="...">
+              <img src="images/slide-dexisis3800.jpg" class="slide-image" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="images/Diseño sin título (2).jpg" class="custom-image" alt="...">
+              <img src="images/slide-arrieta70.jpg" class="slide-image" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/slide-mobilletimpact.jpg" class="slide-image" alt="...">
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-home" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-home" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -103,7 +107,7 @@
           </div>
         </div>
 
-        <div id="sobreNosotros" class="container-fluid" style="background-color: #a8cfec;">
+        <div id="sobre-nosotros" class="container-fluid" style="background-color: #a8cfec;">
           <div class="row">
 
             <h1 style="margin-left: 15px; margin-top: 55px">Sobre nosotros</h1>
@@ -115,7 +119,7 @@
             </div>
 
             <div class="col" style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
-              <img src="images/sobre-nosotros3.jpg" class="aboutus-img" style="margin-bottom: 30px;">
+              <img src="images/img-sobre-nosotros.jpg" class="aboutus-img" style="margin-bottom: 30px;">
             </div>
 
           </div>
@@ -131,9 +135,9 @@
             <div class="col" style="text-align: center; margin-bottom: 30px;">
               <h3 style="margin-left: 15px; margin-top: 10px; color: #064f83;">Oficina Comercial</h3>
               <ul>
-                <h5 style="margin-top: 20px;">Calle Principal 123</h5>
+                <h5 style="margin-top: 20px;">Calle Principal 1234</h5>
                 <h5 style="margin-top: 20px;">Ciudad, Provincia</h5>
-                <h5 style="margin-top: 20px;">Código Postal 12345</h5>
+                <h5 style="margin-top: 20px;">Código Postal 5678</h5>
               </ul>
             </div>
 
@@ -144,7 +148,7 @@
                 <h6>(+54 911) 1234 5678</h6>
 
                 <h5 style="margin-top: 20px;">Correo electrónico:</h5>
-                <h6>contacto@promed.com</h6>
+                <h6>info@promed.com</h6>
                 <!--<p><strong>Correo Electrónico:</strong> <a href="mailto:info@mediequip.com">info@mediequip.com</a></p>-->
             </ul>
             </div>
@@ -162,94 +166,10 @@
 
         <div id="footer" class="container-fluid" style="background-color: #01345c;">
           <div class="row">
-            <h6 style="text-align: center; color: #e3f2fdc0; margin-bottom: 20px; margin-top: 20px;">
+            <h6 style="text-align: center; color: #e3f2fdc0; margin-bottom: 5px; margin-top: 5px;">
               2023 ProMed Equipos Médicos - Tu Socio en Medicina. Todos los derechos reservados.</h6>
             </div>
         </div>
-
-      
-        <!--<div id="marcas" class="container-fluid" style="background-color: #80c8ff;">
-          <h1 style="margin-left: 15px;">Marcas</h1>
-          <div class="row" style="margin-top: 30px;">
-            <div class="col" style="text-align: center;">
-              <img src="images/brain-icon.png" class="column-img">
-              <h5 style="text-align: center; margin-top: 10px;">Neurocirugía</h5>
-            </div>
-            <div class="col" style="text-align: center;">
-              <img src="images/knee-icon.png" class="column-img">
-              <h5 style="text-align: center; margin-top: 10px;">Traumatología</h5>
-            </div>
-            <div class="col" style="text-align: center;">
-              <img src="images/stomach-icon.png" class="column-img">
-              <h5 style="text-align: center; margin-top: 10px;">Gastroenterología</h5>
-            </div>
-            <div class="col" style="text-align: center;">
-              <img src="images/heart-icon.png" class="column-img">
-              <h5 style="text-align: center; margin-top: 10px;">Cardiología</h5>
-            </div>
-          </div>
-          <div class="row" style="margin-top: 50px; ">
-            <div class="col" style="text-align: center;">
-              <img src="images/mri-icon.png" class="column-img">
-              <h5 style="text-align: center; margin-top: 10px; margin-bottom: 30px;">Diagnóstico por Imágenes</h5>
-            </div>
-            <div class="col" style="text-align: center;">
-              <img src="images/kidney-icon.png" class="column-img">
-              <h5 style="text-align: center; margin-top: 10px; margin-bottom: 30px;">Nefrología</h5>
-            </div>
-            <div class="col" style="text-align: center;">
-              <img src="images/eye-icon.png" class="column-img">
-              <h5 style="text-align: center; margin-top: 10px; margin-bottom: 30px;">Oftalmología</h5>
-            </div>
-            <div class="col" style="text-align: center;">
-              <img src="images/tooth-icon.png" class="column-img">
-              <h5 style="text-align: center; margin-top: 10px; margin-bottom: 30px;">Odontología</h5>
-            </div>
-          </div>
-        </div>-->
-
-        
-
-        <!--<div class="row row-cols-1 row-cols-md-4 g-4">
-          <div class="col">
-            <div class="card h-100">
-              <img src="images/MultiGen2-1.webp" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="images/Argon-4.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a short card.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="images/system_2_led_duo_monitor_2013.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-            </div>
-          </div>
-        </div>-->
-
-
 
     </body>
 </html>
