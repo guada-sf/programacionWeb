@@ -25,3 +25,14 @@
   height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
 }
 
+/* Estilos para el etiqueta (label) */
+label {
+  display: block; /* Hace que la etiqueta sea un bloque, ocupando toda la línea */
+  margin-bottom: 5px; /* Agrega un margen inferior para separar la etiqueta del campo de entrada */
+  color: #064f83;
+}
+
+/* Estilos para el área de texto (textarea) */
+textarea {
+  width: 100%; /* Ocupa todo el ancho disponible del contenedor */
+}

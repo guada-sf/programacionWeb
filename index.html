@@ -33,7 +33,7 @@
             </div>
         </nav>
         
-        <div id="carousel-home" class="carousel slide" data-ride="carousel" data-interval="4000">
+        <div id="carousel-home" class="carousel slide" data-ride="carousel" data-interval="4000"> <!--borrar lo de data-->
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -162,6 +162,61 @@
             </div>
 
           </div>
+
+          <div class="row">
+            <h3 style="margin-left: 15px; margin-bottom: 20px;">Formulario de contacto</h3>
+          </div>
+          
+          <!--<div class="row">
+            <div class="col" style="text-align: center;">
+              <h5 style="margin-left: 15px; margin-top: 5px; color: #064f83;"> Nombre: <input id="formularioNombre" type="text"></input> </h5>
+            </div>
+            <div class="col" style="text-align: center;">
+              <h5 style="margin-left: 15px; margin-top: 5px; color: #064f83;"> E-mail: <input id="formularioEmail" type="text"></input> </h5>
+            </div>
+            <div class="col" style="text-align: center;">
+              <h5 style="margin-left: 15px; margin-top: 5px; color: #064f83;"> Telefono: <input id="formularioTelefono" type="text"></input> </h5>
+            </div>
+          </div>
+
+          <div class="row d-flex justify-content-center">
+            <div class="col" style="text-align: center;">
+              <h5 style="margin-left: 15px; margin-top: 5px; color: #064f83;"> Mensaje: <textarea id="mensaje" name="mensaje" rows="4" style="width: auto; margin: auto;" required></textarea> </h5>
+            </div>
+            <div class="col" style="text-align: center;">
+              <button type="submit">Enviar</button>
+            </div>
+          </div>-->
+
+          <div class="row">
+            <div class="col" style="text-align: center;">
+              <label for="formularioNombre">Nombre:</label>
+              <input id="formularioNombre" type="text">
+            </div>
+            <div class="col" style="text-align: center;">
+              <label for="formularioEmail">E-mail:</label>
+              <input id="formularioEmail" type="text">
+            </div>
+            <div class="col" style="text-align: center;">
+              <label for="formularioTelefono">Teléfono:</label>
+              <input id="formularioTelefono" type="text">
+            </div>
+          </div>
+        
+          <div class="row" style="margin-left: 15px; margin-right: 15px;">
+            <div class="col">
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top: 10px; margin-left: 15px">
+            <div class="col" style="margin-bottom: 20px;">
+              <button type="submit">Enviar</button>
+            </div>
+          </div>
+        
+          
         </div>
 
         <div id="footer" class="container-fluid" style="background-color: #01345c;">
