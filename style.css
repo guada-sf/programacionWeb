@@ -36,3 +36,13 @@ label {
 textarea {
   width: 100%; /* Ocupa todo el ancho disponible del contenedor */
 }
+
+.curso-img {
+  width: 90%; /* Establece el ancho deseado */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+
+.evento-img {
+  width: 50%; /* Establece el ancho deseado */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+}
