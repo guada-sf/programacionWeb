@@ -1,5 +1,5 @@
 // DESCARGAR CATÁLOGO DE PRODUCTOS
-document.getElementById("descargarCatalogo").addEventListener("click", function() {
+document.getElementById("descarga-catalogo").addEventListener("click", function() {
     var enlace = document.createElement("a");
     enlace.href = "pdfs/catalogoProMed.pdf";
     enlace.download = "catalogoProMed.pdf";
@@ -7,7 +7,7 @@ document.getElementById("descargarCatalogo").addEventListener("click", function(
 });
   
 
-var descargarLink = document.getElementById("descargarCatalogo");
+var descargarLink = document.getElementById("descarga-catalogo");
 
 descargarLink.addEventListener("mouseover", function() {
   descargarLink.style.color = "orange"; // Cambio de color al posar el mouse
@@ -40,23 +40,26 @@ function cuentaRegresiva(fechaString, idElemento) {
     if(diferenciaFechas < 0){
       clearInterval(x);
     } else{
-      document.getElementById(idElemento).innerHTML = "El evento comienza en: " + dias + "d " + horas + "h " + minutos + "m " + segundos + "s";
+      document.getElementById(idElemento).innerHTML = "El evento comienza en: <br>" + dias + "d " + horas + "h " + minutos + "m " + segundos + "s";
     }
 
   }, 1000);
 }
 
 // cuenta regresiva 1
-var fechaEvento1 = "Dec 15, 2023 11:00:00"
+var fechaEvento1 = "Jan 8, 2024 11:00:00"
 var idElementoEvento1 = "countdown1"
 cuentaRegresiva(fechaEvento1, idElementoEvento1);
 
 // cuenta regresiva 2
-var fechaEvento2 = "Dec 27, 2023 14:00:00"
+var fechaEvento2 = "Jan 10 2024 11:00:00"
 var idElementoEvento2 = "countdown2"
 cuentaRegresiva(fechaEvento2, idElementoEvento2);
 
-
+// cuenta regresiva 2
+var fechaEvento3 = "Feb 1, 2024 11:00:00"
+var idElementoEvento3 = "countdown3"
+cuentaRegresiva(fechaEvento3, idElementoEvento3);
 
 
 

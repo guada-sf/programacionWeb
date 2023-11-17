@@ -1,339 +1,281 @@
 <!DOCTYPE html>
 <html lang ="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-        <title>ProMed Equipos Médicos</title>
-        <link rel="stylesheet" href="./style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProMed Equipos Médicos</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </head>
 
-    <body>
-        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #f9fbfd;">
-            <div class="container-fluid">
-              <a class="navbar-brand active" aria-current="page" href="index.html">ProMed Equipos Médicos</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#especialidades">Especialidades</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#cursos">Cursos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#eventos">Eventos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #f9fbfd; font-family:Verdana, Geneva, Tahoma, sans-serif;">
+      <div class="container-fluid">
+        <a class="navbar-brand active" aria-current="page" href="index.html">ProMed Equipos Médicos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#especialidades">Especialidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cursos">Cursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      
+    <div id="carousel-home" class="carousel slide" data-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/slide-perceptpc.jpg" class="slide-image" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/slide-dexisis3800.jpg" class="slide-image" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/slide-arrieta70.jpg" class="slide-image" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/slide-mobilletimpact.jpg" class="slide-image" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-home" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-home" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div id="especialidades" class="container-fluid" style="background-color: #e9f2f9;">
+
+      <h1 class="seccion-titulo-especialidades">Especialidades</h1>
+
+      <div class="row">
+        <div class="col-md">
+          <img src="images/brain-icon.png" class="column-img">
+          <h5 class="especialidades-nombres">Neurocirugía</h5>
+        </div>
+        <div class="col-md">
+          <img src="images/knee-icon.png" class="column-img">
+          <h5 class="especialidades-nombres">Traumatología</h5>
+        </div>
+        <div class="col-md">
+          <img src="images/stomach-icon.png" class="column-img">
+          <h5 class="especialidades-nombres">Gastroenterología</h5>
+        </div>
+        <div class="col-md">
+          <img src="images/heart-icon.png" class="column-img">
+          <h5 class="especialidades-nombres">Cardiología</h5>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md">
+          <img src="images/mri-icon.png" class="column-img">
+          <h5 class="especialidades-nombres">Diagnóstico por Imágenes</h5>
+        </div>
+        <div class="col-md">
+          <img src="images/kidney-icon.png" class="column-img">
+          <h5 class="especialidades-nombres">Nefrología</h5>
+        </div>
+        <div class="col-md">
+          <img src="images/eye-icon.png" class="column-img">
+          <h5 class="especialidades-nombres">Oftalmología</h5>
+        </div>
+        <div class="col-md">
+          <img src="images/tooth-icon.png" class="column-img">
+          <h5 class="especialidades-nombres">Odontología</h5>
+        </div>
+        <h6 id="descarga-catalogo">Descargar catálogo completo de productos</h6>
+      </div>
+    </div>
+
+    <div id="cursos" class="container-fluid" style="background-color: #a6bccc;">
+
+      <h1 class="seccion-titulo">Cursos</h1>
+      <h5 class="seccion-descripcion">
+      Nuestros cursos están cuidadosamente estructurados para proporcionar
+      conocimientos prácticos y habilidades técnicas esenciales, permitiendo
+      a los participantes aprovechar al máximo nuestras innovadoras soluciones médicas.
+      </h5>
+     
+      <div class="row">
         
-        <div id="carousel-home" class="carousel slide" data-ride="carousel" data-interval="4000"> <!--borrar lo de data-->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/slide-perceptpc.jpg" class="slide-image" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/slide-dexisis3800.jpg" class="slide-image" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/slide-arrieta70.jpg" class="slide-image" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/slide-mobilletimpact.jpg" class="slide-image" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-home" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel-home" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        <div class="col-md">
+          <h5 class="cursos-titulo">Entrenamiento Especializado en Equipos Médicos Cardiológicos</h5>
+          <img src="images/img-ecg-curso.jpg" class="cursos-img">
+          <h6 class="cursos-descripcion">
+            Este programa te guiará a través de los conceptos esenciales de electrocardiogramas, tecnologías de imagen cardíaca y
+            técnicas de intervención avanzadas. Aprende a interpretar resultados, utiliza equipos de diagnóstico de última
+            generación y perfecciona tus habilidades prácticas. 
+          </h6>
+          <h6 class="cursos-fechas">Duración: 2 semanas <br> Del 08/01/2024 al 22/01/2024</h6>
+          <h5 id="countdown1" class="cuenta-regresiva"></h5>
         </div>
 
-        <div id="especialidades" class="container-fluid" style="background-color: #e9f2f9;">
-          <div class="row">
-
-            <h1 style="margin-left: 15px; margin-top: 55px; margin-bottom: 40px;" >Especialidades</h1>
-
-            <div class="col" style="text-align: center;">
-              <img src="images/brain-icon.png" class="column-img">
-              <h5 style="text-align: center; margin-top: 10px;">Neurocirugía</h5>
-            </div>
-            <div class="col" style="text-align: center;">
-              <img src="images/knee-icon.png" class="column-img">
-              <h5 style="text-align: center; margin-top: 10px;">Traumatología</h5>
-            </div>
-            <div class="col" style="text-align: center;">
-              <img src="images/stomach-icon.png" class="column-img">
-              <h5 style="text-align: center; margin-top: 10px;">Gastroenterología</h5>
-            </div>
-            <div class="col" style="text-align: center;">
-              <img src="images/heart-icon.png" class="column-img">
-              <h5 style="text-align: center; margin-top: 10px;">Cardiología</h5>
-            </div>
-          </div>
-
-          <div class="row" style="margin-top: 40px; ">
-
-            <div class="col" style="text-align: center;">
-              <img src="images/mri-icon.png" class="column-img">
-              <h5 style="text-align: center; margin-top: 10px;">Diagnóstico por Imágenes</h5>
-            </div>
-            <div class="col" style="text-align: center;">
-              <img src="images/kidney-icon.png" class="column-img">
-              <h5 style="text-align: center; margin-top: 10px;">Nefrología</h5>
-            </div>
-            <div class="col" style="text-align: center;">
-              <img src="images/eye-icon.png" class="column-img">
-              <h5 style="text-align: center; margin-top: 10px;">Oftalmología</h5>
-            </div>
-            <div class="col" style="text-align: center;">
-              <img src="images/tooth-icon.png" class="column-img">
-              <h5 style="text-align: center; margin-top: 10px;">Odontología</h5>
-            </div>
-          </div>
-
-          <div class="row"">
-
-            <div class="col" style="text-align: right; margin-top: 50px; margin-bottom: 40px; margin-right: 10px;">
-              <h6 id="descargarCatalogo" style="color: #064f83;">Descargar catálogo completo de productos</h6>
-            </div>
-          </div>
-
+        <div class="col-md">
+          <h5 class="cursos-titulo">Curso Avanzado en Imagenología Diagnóstica</h5>
+          <img src="images/img-mri-curso.jpg" class="cursos-img">
+          <h6 class="cursos-descripcion">
+            Desde la interpretación de imágenes radiológicas hasta el manejo
+            experto de equipos de resonancia magnética y tomografía, este curso te sumergirá en el fascinante mundo del diagnóstico por imágenes.
+            Aprende a optimizar la calidad de las imágenes, interpretar hallazgos clínicos y dominar las últimas tecnologías en el campo.
+          </h6>
+          <h6 class="cursos-fechas">Duración: 2 semanas <br> Del 01/02/2024 al 15/02/2024</h6>
+          <h5 id="countdown2" class="cuenta-regresiva"></h5>
         </div>
 
-        <div id="cursos" class="container-fluid" style="background-color: #a6bccc;">
+        <div class="col-md">
+          <h5 class="cursos-titulo">Innovación Tecnológica en Odontología Moderna</h5>
+          <img src="images/img-odontologia-curso.jpg" class="cursos-img">
+          <h6 class="cursos-descripcion">
+            Sumérgete en las últimas tecnologías que están redefiniendo la odontología en nuestro curso especializado.
+            Aprende a implementar escáneres intraorales, sistemas CAD/CAM, y técnicas avanzadas de imágenes 3D.
+            Explorarás cómo las innovaciones tecnológicas mejoran diagnósticos, tratamientos y la experiencia del paciente.
+          </h6>
+          <h6 class="cursos-fechas">Duración: 2 semanas <br> Del 15/01/2024 al 29/01/2024</h6>
+          <h5 id="countdown3" class="cuenta-regresiva"></h5>
+        </div>
+      </div>
 
-          <div class="row">
+    </div>
 
-            <h1 style="margin-left: 15px; margin-top: 55px">Cursos</h1>
+    <div id="sobre-nosotros" class="container-fluid" style="background-color: #a8cfec;">
+      
+      <h1 class="seccion-titulo">Sobre nosotros</h1>
 
-            <h6 style="margin-left: 15px;">
-              Nuestros cursos especializados
-              están diseñados para capacitar a profesionales 
-              de la salud en el manejo avanzado de los equipos médicos que ofrecemos.
-              Nuestros cursos están cuidadosamente estructurados para proporcionar
-              conocimientos prácticos y habilidades técnicas esenciales, permitiendo
-              a los participantes aprovechar al máximo nuestras innovadoras soluciones médicas.
-            </h6>
+      <div class="row">
+        <div class="col-md">
+          <h6 class="descripcion-sobrenosotros">
+            ProMed es una empresa de equipamiento médico con más de 15 años en el mercado. Desde nuestros inicios, hemos proporcionado a profesionales de la salud, hospitales y clínicas el acceso a equipamiento médico de la más alta calidad y tecnología.
+            <br> <br> Nuestra misión es brindar soluciones efectivas a las necesidades de equipamiento médico de nuestros clientes. Trabajamos con las principales marcas y fabricantes a nivel nacional e internacional para garantizar que nuestros productos cumplan con los estándares más exigentes en términos de calidad y seguridad.
+            <br> <br> En ProMed, no solo nos esforzamos por proporcionar los mejores productos, sino también por brindar un servicio al cliente excepcional. Nuestro equipo de expertos está listo para ayudarte en la selección de equipos, asesorarte en la adquisición y brindarte soporte técnico cuando lo necesites.
+          </h6>
+        </div>
+        <div class="col-md">
+          <img src="images/img-sobre-nosotros.jpg" class="aboutus-img">
+        </div>
+      </div>
+    </div>
 
-          </div>
-
-          <div class="row">
-            
-            <div class="col" style="text-align: center;">
-              <h5 style="text-align: center; margin-top: 10px;">Entrenamiento Especializado en Equipos Médicos Cardiológicos</h5>
-              <img src="images/img-ecg-curso.jpg" class="curso-img">
-              <h6 style="text-align: center; margin-top: 10px;">
-                Este programa te guiará a través de los conceptos esenciales de electrocardiogramas, tecnologías de imagen cardíaca y
-                técnicas de intervención avanzadas. Aprende a interpretar resultados, utiliza equipos de diagnóstico de última
-                generación y perfecciona tus habilidades prácticas. 
-              </h6>
-            </div>
-
-            <div class="col" style="text-align: center;">
-              <h5 style="text-align: center; margin-top: 10px;">Curso Avanzado en Imagenología Diagnóstica</h5>
-              <img src="images/img-mri-curso.jpg" class="curso-img">
-              <h6 style="text-align: center; margin-top: 10px;">
-                Desde la interpretación de imágenes radiológicas hasta el manejo
-                experto de equipos de resonancia magnética y tomografía, este curso te sumergirá en el fascinante mundo del diagnóstico por imágenes.
-                Aprende a optimizar la calidad de las imágenes, interpretar hallazgos clínicos y dominar las últimas tecnologías en el campo.
-              </h6>
-
-            </div>
-
-            <div class="col" style="text-align: center;">
-              <h5 style="text-align: center; margin-top: 10px;">Innovación Tecnológica en Odontología Moderna</h5>
-              <img src="images/img-odontologia-curso.jpg" class="curso-img">
-              <h6 style="text-align: center; margin-top: 10px;">
-                Sumérgete en las últimas tecnologías que están redefiniendo la odontología en nuestro curso especializado.
-                Aprende a implementar escáneres intraorales, sistemas CAD/CAM, y técnicas avanzadas de imágenes 3D.
-                Explorarás cómo las innovaciones tecnológicas mejoran diagnósticos, tratamientos y la experiencia del paciente.
-              </h6>
-            </div>
-          </div>
-
+    <div id="contacto" class="container-fluid" style="background-color: #d1d9df;">
+      
+      <h1 class="seccion-titulo">Contacto</h1>
+      <h5 class="seccion-descripcion">Estamos aquí para responder tus preguntas y ayudarte en lo que necesites. No dudes en ponerte en contacto con nosotros.</h5>
+      
+      <div class="row"> 
+        <div class="col-md">
+          <h3 class="contacto-subtitulo">Oficina Comercial</h3>
+          <h5 class="contacto-direccion">
+            Calle Principal 1234
+            <br> <br> 
+            Ciudad, Provincia
+            <br> <br>
+            Código Postal 5678
+          </h5>
         </div>
 
-        <div id="eventos" class="container-fluid" style="background-color: #a4a8ab;">
-          <div class="row">
-
-            <h1 style="margin-left: 15px; margin-top: 55px">Eventos</h1>
-
-            <h6 style="margin-left: 15px;">
-              Mediante nuestros eventos gratuitos, invitamos a nuestros clientes a explorar y experimentar lo último en tecnología médica.
-              Desde presentaciones de vanguardia hasta demostraciones en vivo, nuestros eventos ofrecen una ventana exclusiva a la innovación. 
-              Son la oportunidad perfecta para conectarte con expertos de la industria, intercambiar ideas y sumergirte en el futuro de la medicina.
-            </h6>
-
-          </div>
-
-          <div class="row">
-            
-            <div class="col" style="text-align: center;">
-              <h5 style="text-align: center; margin-top: 10px;">Lanzamiento nuevo ecógrafo EPIQ Elite</h5>
-              <img src="images/img-ecografo-eventos.jpg" class="evento-img">
-              <h6 style="text-align: center; margin-top: 10px;">
-                Presentación del nuevo equipo de ecografía EPIQ Elite de la marca Philips. 
-              </h6>
-              <h6>Fecha del evento: 15/12/2023, 11:00 hs.</h6>
-              
-              <h5 id="countdown1"></h5>
-            </div>
-
-            <div class="col" style="text-align: center;">
-              <h5 style="text-align: center; margin-top: 10px;">Evento de fin de año</h5>
-              <img src="images/img-cerebro-eventos.jpg" class="evento-img">
-              <h6 style="text-align: center; margin-top: 10px;">
-                Resumen de nuestros logros durante el 2023 y objetivos para el nuevo año.
-              </h6>
-              <h6>Fecha del evento: 27/12/2023, 14:00 hs.</h6>
-              
-              <h5 id="countdown2"></h5>
-            </div>
-          </div>
-
+        <div class="col-md">
+          <h3 class="contacto-subtitulo">Información de Contacto</h3>
+          <h5 style="margin-top: 20px;">Número de telefono:</h5>
+          <h6>(+54 9) 11 1234 5678</h6>
+          <h5 style="margin-top: 20px;">Correo electrónico:</h5>
+          <h6 style="margin-bottom: 30px;">info@promed.com</h6>
         </div>
 
-        <div id="sobre-nosotros" class="container-fluid" style="background-color: #a8cfec;">
-          <div class="row">
-
-            <h1 style="margin-left: 15px; margin-top: 55px">Sobre nosotros</h1>
-
-            <div class="col" style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
-              <h6 style="text-align: center; margin-top: 10px; margin-bottom: 30px; margin-left: 10px; margin-right: 10px;">ProMed es una empresa de equipamiento médico con más de 15 años en el mercado. Desde nuestros inicios, hemos proporcionado a profesionales de la salud, hospitales y clínicas el acceso a equipamiento médico de la más alta calidad y tecnología.</h6>
-              <h6 style="text-align: center; margin-top: 10px; margin-bottom: 30px; margin-left: 10px; margin-right: 10px;">Nuestra misión es brindar soluciones efectivas a las necesidades de equipamiento médico de nuestros clientes. Trabajamos con las principales marcas y fabricantes a nivel nacional e internacional para garantizar que nuestros productos cumplan con los estándares más exigentes en términos de calidad y seguridad.</h6>
-              <h6 style="text-align: center; margin-top: 10px; margin-bottom: 30px; margin-left: 10px; margin-right: 10px;">En ProMed, no solo nos esforzamos por proporcionar los mejores productos, sino también por brindar un servicio al cliente excepcional. Nuestro equipo de expertos está listo para ayudarte en la selección de equipos, asesorarte en la adquisición y brindarte soporte técnico cuando lo necesites.</h6>
-            </div>
-
-            <div class="col" style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
-              <img src="images/img-sobre-nosotros.jpg" class="aboutus-img" style="margin-bottom: 30px;">
-            </div>
-
-          </div>
+        <div class="col-md">
+          <h3 class="contacto-subtitulo">Horario de Atención</h3>
+          <h5 class="contacto-horario">
+            Lunes a Viernes
+            <br> <br>
+            9:00 a 18:00 hs
+          </h5>
         </div>
 
-        <div id="contacto" class="container-fluid" style="background-color: #d1d9df;">
-          
-          <div class="row">
+      </div>
 
-            <h1 style="margin-left: 15px; margin-top: 55px;">Contacto</h1>
-            <h5 style="margin-left: 15px; margin-top: 20px; margin-bottom: 20px;">Estamos aquí para responder a tus preguntas y ayudarte en lo que necesites. No dudes en ponerte en contacto con nosotros.</h5>
-          
-            <div class="col" style="text-align: center; margin-bottom: 30px;">
-              <h3 style="margin-left: 15px; margin-top: 10px; color: #064f83;">Oficina Comercial</h3>
-              <ul>
-                <h5 style="margin-top: 20px;">Calle Principal 1234</h5>
-                <h5 style="margin-top: 20px;">Ciudad, Provincia</h5>
-                <h5 style="margin-top: 20px;">Código Postal 5678</h5>
-              </ul>
-            </div>
-
-            <div class="col" style="text-align: center; margin-bottom: 30px;">
-              <h3 style="margin-left: 15px; margin-top: 10px; color: #064f83;">Información de Contacto</h3>
-              <ul>
-                <h5 style="margin-top: 20px;">Número de telefono:</h5>
-                <h6>(+54 911) 1234 5678</h6>
-
-                <h5 style="margin-top: 20px;">Correo electrónico:</h5>
-                <h6>info@promed.com</h6>
-                <!--<p><strong>Correo Electrónico:</strong> <a href="mailto:info@mediequip.com">info@mediequip.com</a></p>-->
-            </ul>
-            </div>
-
-            <div class="col" style="text-align: center; margin-bottom: 30px;">
-              <h3 style="margin-left: 15px; margin-top: 10px; color: #064f83;">Horario de Atención</h3>
-              <ul>
-                <h5 style="margin-top: 40px;">Lunes a Viernes</h5>
-                <h5 style="margin-top: 20px;">9:00 a 18:00 hs</h5>
-            </ul>
-            </div>
-
-          </div>
-
-          <div class="row">
-            <h3 style="margin-left: 15px; margin-bottom: 20px;">Formulario de contacto</h3>
-          </div>
-          
-          <!--<div class="row">
-            <div class="col" style="text-align: center;">
-              <h5 style="margin-left: 15px; margin-top: 5px; color: #064f83;"> Nombre: <input id="formularioNombre" type="text"></input> </h5>
-            </div>
-            <div class="col" style="text-align: center;">
-              <h5 style="margin-left: 15px; margin-top: 5px; color: #064f83;"> E-mail: <input id="formularioEmail" type="text"></input> </h5>
-            </div>
-            <div class="col" style="text-align: center;">
-              <h5 style="margin-left: 15px; margin-top: 5px; color: #064f83;"> Telefono: <input id="formularioTelefono" type="text"></input> </h5>
-            </div>
-          </div>
-
-          <div class="row d-flex justify-content-center">
-            <div class="col" style="text-align: center;">
-              <h5 style="margin-left: 15px; margin-top: 5px; color: #064f83;"> Mensaje: <textarea id="mensaje" name="mensaje" rows="4" style="width: auto; margin: auto;" required></textarea> </h5>
-            </div>
-            <div class="col" style="text-align: center;">
-              <button type="submit">Enviar</button>
-            </div>
-          </div>-->
-
-          <div class="row">
-            <div class="col" style="text-align: center;">
-              <label for="formularioNombre">Nombre:</label>
-              <input id="formularioNombre" type="text">
-            </div>
-            <div class="col" style="text-align: center;">
-              <label for="formularioEmail">E-mail:</label>
-              <input id="formularioEmail" type="text">
-            </div>
-            <div class="col" style="text-align: center;">
-              <label for="formularioTelefono">Teléfono:</label>
-              <input id="formularioTelefono" type="text">
-            </div>
-          </div>
-        
-          <div class="row" style="margin-left: 15px; margin-right: 15px;">
-            <div class="col">
-              <label for="formularioMensaje">Mensaje:</label>
-              <textarea id="formularioMensaje" name="mensaje" rows="4" required></textarea>
-            </div>
-          </div>
-
-          <div class="row" style="margin-top: 10px; margin-left: 15px">
-            <div class="col" style="margin-bottom: 20px;">
-              <button type="submit">Enviar</button>
-            </div>
-          </div>
-        
+      <div class="row">
+        <h5 class="seccion-descripcion">Formulario de contacto</h5>
+      </div>
+      
+      <!--<div class="row">
+        <div class="col" style="text-align: center;">
+          <h5 style="margin-left: 15px; margin-top: 5px; color: #064f83;"> Nombre: <input id="formularioNombre" type="text"></input> </h5>
         </div>
-
-        <div id="footer" class="container-fluid" style="background-color: #01345c;">
-          <div class="row">
-            <h6 style="text-align: center; color: #e3f2fdc0; margin-bottom: 5px; margin-top: 5px;">
-              2023 ProMed Equipos Médicos - Tu Socio en Medicina. Todos los derechos reservados.</h6>
-            </div>
+        <div class="col" style="text-align: center;">
+          <h5 style="margin-left: 15px; margin-top: 5px; color: #064f83;"> E-mail: <input id="formularioEmail" type="text"></input> </h5>
         </div>
+        <div class="col" style="text-align: center;">
+          <h5 style="margin-left: 15px; margin-top: 5px; color: #064f83;"> Telefono: <input id="formularioTelefono" type="text"></input> </h5>
+        </div>
+      </div>
 
-        <script src="script.js"></script>
+      <div class="row d-flex justify-content-center">
+        <div class="col" style="text-align: center;">
+          <h5 style="margin-left: 15px; margin-top: 5px; color: #064f83;"> Mensaje: <textarea id="mensaje" name="mensaje" rows="4" style="width: auto; margin: auto;" required></textarea> </h5>
+        </div>
+        <div class="col" style="text-align: center;">
+          <button type="submit">Enviar</button>
+        </div>
+      </div>-->
 
-    </body>
+      <div class="row">
+        <div class="col-md" style="text-align: center;">
+          <label for="formularioNombre">Nombre:</label>
+          <input id="formularioNombre" type="text">
+        </div>
+        <div class="col-md" style="text-align: center;">
+          <label for="formularioEmail">E-mail:</label>
+          <input id="formularioEmail" type="text">
+        </div>
+        <div class="col-md" style="text-align: center;">
+          <label for="formularioTelefono">Teléfono:</label>
+          <input id="formularioTelefono" type="text">
+        </div>
+      </div>
+    
+      <div class="row" style="margin-left: 15px; margin-right: 15px;">
+        <div class="col-md">
+          <label for="formularioMensaje">Mensaje:</label>
+          <textarea id="formularioMensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 10px; margin-left: 15px">
+        <div class="col-md" style="margin-bottom: 20px;">
+          <button type="submit">Enviar</button>
+        </div>
+      </div>
+    
+    </div>
+
+    <div id="footer" class="container-fluid" style="background-color: #01345c;">
+      <h6 class="footer-texto">
+        2023 ProMed Equipos Médicos - Tu Socio en Medicina. Todos los derechos reservados.
+      </h6>
+    </div>
+
+    <script src="script.js"></script>
+    
+  </body>
 </html>

@@ -1,48 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;   
+  overflow:auto;  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .slide-image {
-  width: 100%; /* Establece el ancho deseado */
-  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
-  /* O, si deseas fijar la altura en lugar de ajustarla automáticamente:
-  height: 200px; */
-  display: block; /* Convertir la imagen en un elemento de bloque */
-  margin: 0 auto; /* Centrar horizontalmente en su contenedor */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 #carousel-home {
-  margin-top: 50px; /* Ajusta el valor según tus necesidades */
+  padding-top: 50px; 
+}
+
+.seccion-titulo-especialidades {
+  padding-top: 55px;
+  padding-bottom: 40px;
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+.col-md {
+  text-align: center;
 }
 
 .column-img {
-  width: 30%; /* Establece el ancho deseado */
-  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  width: 30%; 
+  height: auto; 
 }
+
+.especialidades-nombres {
+  text-align: center; 
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+#descarga-catalogo {
+  color: #064f83;
+  text-align: right;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 20px;
+}
+
+.seccion-titulo {
+  padding-top: 55px;
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+.seccion-descripcion {
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.cursos-titulo {
+  text-align: center;
+  color: #040435;
+  font-weight: 600;
+  padding-top: 30px;
+}
+
+.cursos-img {
+  width: 90%;
+  height: auto;
+  padding-top: 20px;
+}
+
+.cursos-descripcion {
+  padding-top: 20px;
+  text-align: center; 
+}
+
+.cursos-fechas {
+  padding-top: 15px;
+  text-align: center; 
+}
+
+.cuenta-regresiva {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.descripcion-sobrenosotros {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.aboutus-img {
+  width: 70%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.contacto-subtitulo{
+  padding-top: 20px;
+  color: #064f83;
+}
+
+.contacto-direccion {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.contacto-horario{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.footer-texto {
+  text-align: center;
+  color: #e3f2fdc0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+/* hasta acá está chequeado */
 
 .products{
   background-color: aquamarine;
 }
 
-.aboutus-img {
-  width: 80%; /* Establece el ancho deseado */
-  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
-}
-
 /* Estilos para el etiqueta (label) */
 label {
-  display: block; /* Hace que la etiqueta sea un bloque, ocupando toda la línea */
-  margin-bottom: 5px; /* Agrega un margen inferior para separar la etiqueta del campo de entrada */
+  display: block; 
+  padding-bottom: 5px;
   color: #064f83;
 }
 
 /* Estilos para el área de texto (textarea) */
-textarea {
-  width: 100%; /* Ocupa todo el ancho disponible del contenedor */
+.textarea {
+  width: 100%;
 }
 
-.curso-img {
-  width: 90%; /* Establece el ancho deseado */
-  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+.responsive-text {
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-.evento-img {
-  width: 50%; /* Establece el ancho deseado */
-  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+@media (min-width: 768px) {
+  .responsive-text {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 540px; /* Ancho máximo en dispositivos medianos y grandes */
+  }
 }
