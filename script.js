@@ -68,10 +68,12 @@ cuentaRegresiva(fechaEvento3, idElementoEvento3);
 function interaccionModal(ventana_modal, boton_abrir, boton_cerrar) {
   boton_abrir.addEventListener("click", () => {
     ventana_modal.showModal();
+    document.body.classList.add('modal-abierto');
   });
   
   boton_cerrar.addEventListener("click", () => {
     ventana_modal.close();
+    document.body.classList.remove('modal-abierto');
   });
 };
 
@@ -151,10 +153,9 @@ interaccionModal(modal_odonto, abrir_odonto, cerrar_odonto);
 
 // Actualizar cantidad de entradas
 function actualizarCantidad(boton_menos, boton_mas, cantidad_evento) {
-  
-  var cantidad = 1;
 
   boton_menos.addEventListener("click", function (){
+    var cantidad = parseInt(cantidad_evento.textContent);
     if (cantidad > 1) {
       cantidad--;
       cantidad_evento.textContent = cantidad;
@@ -162,6 +163,7 @@ function actualizarCantidad(boton_menos, boton_mas, cantidad_evento) {
   }); 
   
   boton_mas.addEventListener("click", function (){
+    var cantidad = parseInt(cantidad_evento.textContent);
     cantidad++;
     cantidad_evento.textContent = cantidad;
   }); 
@@ -169,57 +171,88 @@ function actualizarCantidad(boton_menos, boton_mas, cantidad_evento) {
 }
 
 // Ventana modal para reserva de entradas
-function interaccionModalEventos(ventana_modal, boton_abrir, boton_cerrar, boton_aceptar, nombre_evento, apellido_evento, email_evento, cantidad_evento, evento) {
+function interaccionModalEventos(ventana_modal, cancelar_evento, aceptar_evento, nombre_evento, apellido_evento, email_evento, texto_completar_datos, boton_abrir, cantidad_evento, evento) {
   
+  // Abrir ventana modal con boton Reservar
   boton_abrir.addEventListener("click", () => {
+    document.body.classList.add('modal-abierto');
     ventana_modal.showModal();
+    texto_completar_datos.textContent = "";
   });
   
-  boton_cerrar.addEventListener("click", () => {
-    ventana_modal.close();
+  // Salir de la ventana modal con boton Cancelar
+  cancelar_evento.addEventListener("click", () => {
     nombre_evento.value = '';
     apellido_evento.value = '';
     email_evento.value = '';
+    texto_completar_datos.textContent = '';
+    ventana_modal.close();
+    cantidad_evento.textContent = "1";
+    document.body.classList.remove('modal-abierto');
   });
 
-  boton_aceptar.addEventListener("click", () => {
-    nombre_evento.value = '';
-    apellido_evento.value = '';
-    email_evento.value = '';
-    ventana_modal.close();
-    Toastify({
-      text: "¡Sus datos fueron registrados!",
-      duration: 3000,  // Duración en milisegundos
-      gravity: "top",  // Posición: "top" o "bottom"
-      position: "center"  // Posición horizontal: "left", "center", "right"
-    }).showToast();
-    //document.getElementById("modal-evento-confirmacion").showModal();
+  // Confirmar reserva y salir de la ventana modal con boton Aceptar
+  aceptar_evento.addEventListener("click", () => {
+
+    if (nombre_evento.value.trim() !== "" && apellido_evento.value.trim() !== "" && email_evento.value.trim() !== "") {
+      nombre_evento.value = '';
+      apellido_evento.value = '';
+      email_evento.value = '';
+      ventana_modal.close();
+
+      if (cantidad_evento.textContent == "1"){
+        Toastify({
+          text: "Ha reservado correctamente su entrada.",
+          duration: 3000,  // Duración en milisegundos
+          gravity: "top",  // Posición: "top" o "bottom"
+          position: "center"  // Posición horizontal: "left", "center", "right"
+        }).showToast();
+      } else {
+        Toastify({
+          text: "Ha reservado correctamente sus entradas.",
+          duration: 3000,  // Duración en milisegundos
+          gravity: "top",  // Posición: "top" o "bottom"
+          position: "center"  // Posición horizontal: "left", "center", "right"
+        }).showToast();
+      }
+
+      cantidad_evento.textContent = "1";
+      document.body.classList.remove('modal-abierto');
+
+    } else {
+      texto_completar_datos.textContent = "Por favor complete todos los datos.";
+    }
   });
 };
 
-/*function interaccionModalConfirmacion(){
-  ventana_modal = document.getElementById("modal-evento-confirmacion");
-
-
-}*/
-
-var boton_menos_1 = document.getElementById("boton-menos-1");
-var boton_mas_1 = document.getElementById("boton-mas-1");
-var cantidad_evento_1 = document.getElementById("cantidad-evento-1");
-actualizarCantidad(boton_menos_1, boton_mas_1, cantidad_evento_1);
-
-var boton_menos_2 = document.getElementById("boton-menos-2");
-var boton_mas_2 = document.getElementById("boton-mas-2");
-var cantidad_evento_2 = document.getElementById("cantidad-evento-2");
-actualizarCantidad(boton_menos_2, boton_mas_2, cantidad_evento_2);
- 
-
-var modal_evento_1 = document.getElementById("modal-evento-1");
-var abrir_evento_1 = document.getElementById("boton-reservar-1");
+var ventana_modal_1 = document.getElementById("modal-evento-1");
 var cancelar_evento_1 = document.getElementById("cancelar-evento-1");
 var aceptar_evento_1 = document.getElementById("aceptar-evento-1");
 var nombre_evento_1 = document.getElementById("nombre-evento-1");
 var apellido_evento_1 = document.getElementById("apellido-evento-1");
 var email_evento_1 = document.getElementById("email-evento-1");
+var texto_completar_datos_1 = document.getElementById("texto-completar-datos-1");
+var boton_menos_1 = document.getElementById("boton-menos-1");
+var boton_mas_1 = document.getElementById("boton-mas-1");
+var cantidad_evento_1 = document.getElementById("cantidad-evento-1");
+var evento_1 = document.getElementById("evento-1");
+var abrir_evento_1 = document.getElementById("boton-reservar-1");
 
-interaccionModalEventos(modal_evento_1, abrir_evento_1, cancelar_evento_1, aceptar_evento_1, nombre_evento_1, apellido_evento_1, email_evento_1);
+var ventana_modal_2 = document.getElementById("modal-evento-2");
+var cancelar_evento_2 = document.getElementById("cancelar-evento-2");
+var aceptar_evento_2 = document.getElementById("aceptar-evento-2");
+var nombre_evento_2 = document.getElementById("nombre-evento-2");
+var apellido_evento_2 = document.getElementById("apellido-evento-2");
+var email_evento_2 = document.getElementById("email-evento-2");
+var texto_completar_datos_2 = document.getElementById("texto-completar-datos-2");
+var boton_menos_2 = document.getElementById("boton-menos-2");
+var boton_mas_2 = document.getElementById("boton-mas-2");
+var cantidad_evento_2 = document.getElementById("cantidad-evento-2");
+var evento_2 = document.getElementById("evento-2");
+var abrir_evento_2 = document.getElementById("boton-reservar-2");
+
+actualizarCantidad(boton_menos_1, boton_mas_1, cantidad_evento_1);
+interaccionModalEventos(ventana_modal_1, cancelar_evento_1, aceptar_evento_1, nombre_evento_1, apellido_evento_1, email_evento_1, texto_completar_datos_1, abrir_evento_1, cantidad_evento_1, evento_1);
+
+actualizarCantidad(boton_menos_2, boton_mas_2, cantidad_evento_2);
+interaccionModalEventos(ventana_modal_2, cancelar_evento_2, aceptar_evento_2, nombre_evento_2, apellido_evento_2, email_evento_2, texto_completar_datos_2, abrir_evento_2, cantidad_evento_2, evento_2);

@@ -1,12 +1,36 @@
+/* GENERAL */
+
 body {
   margin: 0;
   padding: 0;   
   overflow:auto;  
 }
 
+body.modal-abierto {
+  overflow: hidden;
+}
+
 h1, h2, h3, h4, h5, h6, p, li {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.seccion-titulo {
+  padding-top: 55px;
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+.seccion-descripcion {
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-md {
+  text-align: center;
+}
+
+/* CAROUSEL DE IMAGENES */
 
 .slide-image {
   width: 100%;
@@ -19,6 +43,8 @@ h1, h2, h3, h4, h5, h6, p, li {
   padding-top: 50px; 
 }
 
+/* ESPECIALIDADES */
+
 .seccion-titulo-especialidades {
   padding-top: 55px;
   padding-bottom: 40px;
@@ -26,11 +52,7 @@ h1, h2, h3, h4, h5, h6, p, li {
   font-weight: bold;
 }
 
-.col-md {
-  text-align: center;
-}
-
-.column-img {
+.especialidades-img {
   width: 30%; 
   height: auto; 
 }
@@ -52,17 +74,19 @@ h1, h2, h3, h4, h5, h6, p, li {
   cursor: pointer;
 }
 
-.seccion-titulo {
-  padding-top: 55px;
-  padding-left: 15px;
-  font-weight: bold;
+.ventana-modal-especialidades {
+  background-color: #87c5fa;
+  padding: 30px 50px;
+  width: 80%;
 }
 
-.seccion-descripcion {
-  padding-top: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
+.modal-titulo {
+  text-align: center;
+  font-weight: bold;
+  font-size: larger
 }
+
+/* CURSOS */
 
 .cursos-titulo {
   text-align: center;
@@ -83,32 +107,163 @@ h1, h2, h3, h4, h5, h6, p, li {
   text-align: center; 
 }
 
-.cursos-fechas {
-  padding-top: 15px;
+.cuenta-regresiva {
+  padding-top: 3%;
+  text-align: center;
+  padding-bottom: 8%;
+}
+
+/* EVENTOS */ 
+
+.eventos-titulo {
+  text-align: center;
+  color: #040435;
+  font-weight: 600;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.eventos-img {
+  width: 60%;
+  height: auto;
+  border-radius: 2%;
+}
+
+.eventos-descripcion{
+  padding-top: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
   text-align: center; 
 }
 
-.cuenta-regresiva {
-  padding-top: 15px;
+.texto-eventos-reservar{
+  padding-top: 2%;
+  color: #040435;
+  font-weight: bold;
+}
+
+.boton-cantidad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2%;
+}
+
+.boton-cantidad button {
+  width: 20px; 
+  padding: 2px 15px 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.cantidad-evento {
+  font-size: 18px;
+  margin: 0 10px;
+  display: flex; 
+  align-items: center;
+}
+
+.boton-reservar{
+  padding-top: 3%;
+  padding-bottom: 8%;
+}
+
+label {
+  display: block;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-weight: bold;
+}
+
+input {
+  width:100%;
+  padding: 0.3%;
+  box-sizing: border-box;
+}
+
+textarea{
+  width:100%;
+  padding: 0.3%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.ventana-modal-eventos {
+  background-color: #b5d1e9;
+  padding: 30px 50px;
+  width: 60%;
+}
+
+@media (max-width: 600px) {
+  .ventana-modal-eventos {
+    width: 100%;
+  }
+}
+
+#botones-evento {
+  padding-top: 5%;
+}
+
+.boton-cancelar {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.boton-aceptar {
+  background-color: rgba(4, 255, 0, 0.7);
+  margin-left: 5%;
+}
+
+@media (max-width: 314px) {
+  .boton-aceptar {
+    margin-top: 5%;
+  }
+}
+
+.texto-completar-datos {
+  color: red;
+  padding-top: 1%;
+  padding-bottom: 1%;
   text-align: center;
 }
+
+/* SOBRE NOSOTROS */
 
 .descripcion-sobrenosotros {
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 4%;
+  padding-bottom: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.aboutus-img {
+.nosotros-img {
   width: 80%;
-  padding-bottom: 40px;
+  border-radius: 2%;
 }
+
+#padding-sobre-nosotros{
+  padding-bottom: 2%;
+}
+
+@media (max-width: 768px) {
+  #padding-sobre-nosotros {
+    padding-bottom: 10%;
+  }
+}
+
+/* CONTACTO */
 
 .contacto-subtitulo{
   padding-top: 20px;
   color: #064f83;
+  font-weight: bold;
 }
 
 .contacto-direccion {
@@ -123,63 +278,28 @@ h1, h2, h3, h4, h5, h6, p, li {
   text-align: center;
 }
 
+.formulario-titulo{
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: bolder;
+}
+
+#formulario{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#boton-enviar-formulario{
+  background-color: rgba(0, 94, 255, 0.2);
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/* FOOTER */
+
 .footer-texto {
   text-align: center;
   color: #e3f2fdc0;
   padding-top: 5px;
   padding-bottom: 5px;
-}
-
-.ventana-modal {
-  background-color: #a4a8ab;
-  padding: 30px 50px;
-}
-
-.modal-titulo {
-  text-align: center;
-  font-weight: bold;
-}
-
-.evento-img {
-  width: 60%;
-  height: auto;
-  border-radius: 2%;
-}
-
-.boton-cantidad {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 3%;
-}
-
-/*.boton-cantidad button {
-  font-size: 16px;
-  cursor: pointer;
-  width: 6%;
-  padding-bottom: 1%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}*/
-
-.boton-cantidad button {
-  width: 20px; /* Ajusta el valor según sea necesario */
-  padding: 2px 15px 4px;
-  font-size: 16px;
-  cursor: pointer;
-  display: flex; /* Usa flexbox para centrar el contenido */
-  align-items: center; /* Centra verticalmente el contenido */
-  justify-content: center; /* Centra horizontalmente el contenido */
-}
-
-.cantidad-evento {
-  font-size: 18px;
-  margin: 0 10px;
-  display: flex; /* Usa flexbox para centrar el contenido */
-  align-items: center; /* Centra verticalmente el contenido */
-}
-
-.boton-reservar{
-  padding-top: 3%;
 }
