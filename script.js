@@ -187,9 +187,21 @@ function interaccionModalEventos(ventana_modal, boton_abrir, boton_cerrar, boton
     apellido_evento.value = '';
     email_evento.value = '';
     ventana_modal.close();
-    ventana
+    Toastify({
+      text: "¡Sus datos fueron registrados!",
+      duration: 3000,  // Duración en milisegundos
+      gravity: "top",  // Posición: "top" o "bottom"
+      position: "center"  // Posición horizontal: "left", "center", "right"
+    }).showToast();
+    //document.getElementById("modal-evento-confirmacion").showModal();
   });
 };
+
+/*function interaccionModalConfirmacion(){
+  ventana_modal = document.getElementById("modal-evento-confirmacion");
+
+
+}*/
 
 var boton_menos_1 = document.getElementById("boton-menos-1");
 var boton_mas_1 = document.getElementById("boton-mas-1");
