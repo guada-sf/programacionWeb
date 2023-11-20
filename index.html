@@ -40,7 +40,7 @@
       </div>
     </nav>
       
-    <div id="carousel-home" class="carousel slide" data-ride="carousel">
+    <div id="carousel-home" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -73,7 +73,15 @@
 
     <div id="especialidades" class="container-fluid" style="background-color: #e9f2f9;">
 
-      <h1 class="seccion-titulo-especialidades">Especialidades</h1>
+      <h1 class="seccion-titulo">Especialidades</h1>
+
+      <h5 class="seccion-descripcion-especialidades">
+        Ofrecemos una gran cantidad de productos médicos de distintas especialidades,
+        cada uno diseñado para proporcionar soluciones avanzadas y eficientes.
+        Desde equipos de diagnóstico de vanguardia hasta dispositivos de tratamiento innovadores,
+        nuestra amplia gama respalda la excelencia en el cuidado de la salud en diversas áreas médicas.
+        <br> <br> <a href="#contacto">Contáctenos</a> para saber más.
+        </h5>
 
       <div class="row">
         <div class="col-md">
@@ -128,14 +136,15 @@
       <div class="row">
         
         <div class="col-md">
-          <h5 class="cursos-titulo">Entrenamiento Especializado en Equipos Médicos Cardiológicos</h5>
+          <h5 class="cursos-titulo">Entrenamiento en Equipos Médicos Cardiológicos</h5>
           <img src="images/img-ecg-curso.jpg" class="cursos-img">
           <p class="cursos-descripcion">
             Este programa te guiará a través de los conceptos esenciales de electrocardiogramas, tecnologías de imagen cardíaca y
             técnicas de intervención avanzadas. Aprende a interpretar resultados, utiliza equipos de diagnóstico de última
             generación y perfecciona tus habilidades prácticas. 
-            <br> <br> <strong>Duración: 2 semanas <br> Del 08/01/2024 al 22/01/2024</strong> 
+            <br> <br> <strong> Duración: 4 semanas <br> Del 15/11/2023 al 13/12/2023 </strong>  
           </p>
+          
           <h5 id="countdown1" class="cuenta-regresiva"></h5>
         </div>
 
@@ -144,9 +153,9 @@
           <img src="images/img-mri-curso.jpg" class="cursos-img">
           <p class="cursos-descripcion">
             Desde la interpretación de imágenes radiológicas hasta el manejo
-            experto de equipos de resonancia magnética y tomografía, este curso te sumergirá en el fascinante mundo del diagnóstico por imágenes.
-            Aprende a optimizar la calidad de las imágenes, interpretar hallazgos clínicos y dominar las últimas tecnologías en el.
-            <br> <br> <strong>Duración: 2 semanas <br> Del 01/02/2024 al 15/02/2024</strong> 
+            experto de equipos de resonancia magnética y tomografía, este curso te sumergirá en el mundo del diagnóstico por imágenes.
+            Aprende a optimizar la calidad de las imágenes, interpretar hallazgos clínicos y dominar las últimas tecnologías.
+            <br> <br> <strong> Duración: 3 semanas <br> Del 08/01/2024 al 29/01/2024 </strong>
           </p>
           <h5 id="countdown2" class="cuenta-regresiva"></h5>
         </div>
@@ -158,7 +167,7 @@
             Sumérgete en las últimas tecnologías que están redefiniendo la odontología en nuestro curso especializado.
             Aprende a implementar escáneres intraorales, sistemas CAD/CAM, y técnicas avanzadas de imágenes 3D.
             Explorarás cómo las innovaciones tecnológicas mejoran diagnósticos, tratamientos y la experiencia del paciente.
-            <br> <br> <strong>Duración: 2 semanas <br> Del 15/01/2024 al 29/01/2024</strong>
+            <br> <br> <strong> Duración: 5 semanas <br> Del 06/02/2024 al 12/03/2024</strong> 
           </p>
           <h6 class="cursos-fechas"></h6>
           <h5 id="countdown3" class="cuenta-regresiva"></h5>
@@ -279,7 +288,7 @@
       </div>
 
       <h5 class="formulario-titulo">Formulario de contacto</h5>
-
+      
       <form id="formulario" action="https://formsubmit.co/27981c329aa4a3b8a4ddfbdd7075485d" method="POST">
         <label for="nombre-formulario">Nombre:</label>
         <input type="text" id="nombre-formulario" name="nombre" required>
@@ -297,8 +306,8 @@
           <button id="boton-enviar-formulario" type="submit">Enviar</button>
         </div>
 
+        <input type="hidden" name="_next" value="https://gsf-programacion-web.vercel.app/">
         <input type="hidden" name="_captcha" value="false">
-
       </form>
     
     </div>
@@ -319,7 +328,7 @@
           <br> <br> 
           Equipos destacados:
           <ul>
-            <li>Neuroendoscopios de alta resolución</li>
+            <li>Neuroestimuladores</li>
             <li>Sistemas de navegación quirúrgica</li>
             <li>Instrumental neuroquirúrgico especializado</li>
           </ul>
@@ -335,7 +344,7 @@
           <br> <br> 
           Equipos destacados:
           <ul>
-            <li>Rayos X digitales para imágenes de alta resolución</li>
+            <li>Prótesis de hombro, cadera y rodilla</li>
             <li>Sistemas de fijación externa avanzada</li>
             <li>Instrumental para cirugía ortopédica</li>
           </ul>
@@ -353,7 +362,7 @@
           <ul>
             <li>Endoscopios flexibles de última generación</li>
             <li>Sistemas de grabación y documentación endoscópica</li>
-            <li>Monitores de paciente especializados</li>
+            <li>Stents gástricos</li>
           </ul>
         </p>
         <button id="cerrar-gastro">Cerrar</button>
@@ -367,8 +376,8 @@
           <br> <br> 
           Equipos destacados:
           <ul>
-            <li>Ecocardiogramas y sistemas de ultrasonido vascular</li>
-            <li>Monitores de ECG avanzados</li>
+            <li>Sistemas de ultrasonido vascular</li>
+            <li>Electrocardiógrafos, Holter y MAPA</li>
             <li>Desfibriladores y marcapasos</li>
           </ul>
         </p>
@@ -383,7 +392,7 @@
           <br> <br> 
           Equipos destacados:
           <ul>
-            <li>Resonancia magnética de alto campon</li>
+            <li>Resonancia magnética de alto campo</li>
             <li>Tomografía computarizada multidetector</li>
             <li>Equipos de radiografía digital</li>
           </ul>
@@ -401,7 +410,7 @@
           <ul>
             <li>Máquinas de diálisis de última generación</li>
             <li>Monitores de presión arterial</li>
-            <li>Sistemas de filtración renal</li>
+            <li>Básculas de plataforma</li>
           </ul>
         </p>
         <button id="cerrar-nefro">Cerrar</button>
@@ -411,7 +420,7 @@
         <h1 class="modal-titulo">Oftalmología</h1>
         <p>
           <br>Descubre nuestra variedad de equipos diseñados para profesionales de la oftalmología.
-          Desde quirófanos oftalmológicos hasta avanzados equipos de diagnóstico visual, proporcionamos herramientas que elevan los estándares en la atención oftalmológica, garantizando resultados precisos y la satisfacción del paciente.
+          Desde láseres oftalmológicos hasta avanzados equipos de diagnóstico visual, proporcionamos herramientas que elevan los estándares en la atención oftalmológica, garantizando resultados precisos y la satisfacción del paciente.
           <br> <br> 
           Equipos destacados:
           <ul>
@@ -432,7 +441,7 @@
           Equipos destacados:
           <ul>
             <li>Unidades dentales completas</li>
-            <li>Radiografías digitales</li>
+            <li>Equipos de rayos X para odontología</li>
             <li>Instrumentación quirúrgica dental</li>
           </ul>
         </p>
@@ -446,7 +455,7 @@
         <h1 class="modal-titulo">Reservar entradas</h1>
 
         <h6 id="texto-completar-datos-1" class="texto-completar-datos"></h6>
-
+        
         <label for="nombre-evento-1">Nombre:</label>
         <input type="text" id="nombre-evento-1" name="nombre" required>
         
@@ -460,6 +469,7 @@
           <button id="cancelar-evento-1" class="boton-cancelar">Cancelar</button>
           <button id="aceptar-evento-1" class="boton-aceptar">Confirmar</button>
         </div>
+        
       </dialog>
 
       <dialog id="modal-evento-2"  class="ventana-modal-eventos">

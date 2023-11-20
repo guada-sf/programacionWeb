@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6, p, li {
 /* CAROUSEL DE IMAGENES */
 
 .slide-image {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -43,13 +43,22 @@ h1, h2, h3, h4, h5, h6, p, li {
   padding-top: 50px; 
 }
 
+@media (max-width: 600px) {
+  .slide-image {
+    height: 170px;
+  }
+  #carousel-home {
+    padding-top: 55px;
+  }
+}
+
 /* ESPECIALIDADES */
 
-.seccion-titulo-especialidades {
-  padding-top: 55px;
-  padding-bottom: 40px;
+.seccion-descripcion-especialidades {
+  padding-top: 20px;
   padding-left: 15px;
-  font-weight: bold;
+  padding-right: 15px;
+  padding-bottom: 30px;
 }
 
 .especialidades-img {

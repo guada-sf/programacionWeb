@@ -1,6 +1,6 @@
 // DESCARGAR CATÁLOGO DE PRODUCTOS
 
-var descargarLink = document.getElementById("descarga-catalogo");
+var descargar_link = document.getElementById("descarga-catalogo");
 
 function colorTextoClickeable(elementoTexto) {
   elementoTexto.addEventListener("mouseover", function() {
@@ -14,56 +14,69 @@ function colorTextoClickeable(elementoTexto) {
   });
 }
 
-colorTextoClickeable(descargarLink);
+colorTextoClickeable(descargar_link);
 
-descargarLink.addEventListener("click", function() {
+descargar_link.addEventListener("click", function() {
   var enlace = document.createElement("a");
   enlace.href = "pdfs/catalogoProMed.pdf";
   enlace.download = "catalogoProMed.pdf";
   enlace.click();
 });
 
+
 // CUENTA REGRESIVA A CURSOS
 
-function cuentaRegresiva(fechaString, idElemento) {
-  var fechaEventoDate = new Date(fechaString).getTime();
+function cuentaRegresiva(fecha_inicio_string, fecha_fin_string, id_elemento) {
+  var fecha_inicio_date = new Date(fecha_inicio_string).getTime();
+  var fecha_fin_date = new Date(fecha_fin_string).getTime();
 
   var x = setInterval(function(){
     
-    var fechaHoyDate = new Date().getTime();
+    var fecha_hoy_date = new Date().getTime();
 
-    var diferenciaFechas = fechaEventoDate - fechaHoyDate
+    var diferencia_fechas = fecha_inicio_date - fecha_hoy_date
 
-    var dias = Math.floor(diferenciaFechas / (1000 * 60 * 60 * 24));
-    var horas = Math.floor((diferenciaFechas % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutos = Math.floor((diferenciaFechas % (1000 * 60 * 60)) / (1000 * 60));
-    var segundos = Math.floor((diferenciaFechas % (1000 * 60)) / 1000);
+    var dias = Math.floor(diferencia_fechas / (1000 * 60 * 60 * 24));
+    var horas = Math.floor((diferencia_fechas % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutos = Math.floor((diferencia_fechas % (1000 * 60 * 60)) / (1000 * 60));
+    var segundos = Math.floor((diferencia_fechas % (1000 * 60)) / 1000);
   
-    if(diferenciaFechas < 0){
+    if(diferencia_fechas < 0){
       clearInterval(x);
+
+      if (fecha_hoy_date > fecha_inicio_date && fecha_hoy_date < fecha_fin_date) {
+        document.getElementById(id_elemento).innerHTML = "El curso ya comenzó.";
+      } else if (fecha_hoy_date > fecha_fin_date) {
+        document.getElementById(id_elemento).innerHTML = "El curso ha finalizado.";
+      }
+
     } else{
-      document.getElementById(idElemento).innerHTML = "El curso comienza en: <br>" + dias + "d " + horas + "h " + minutos + "m " + segundos + "s";
+      document.getElementById(id_elemento).innerHTML = "El curso comienza en: <br>" + dias + "d " + horas + "h " + minutos + "m " + segundos + "s";
     }
 
   }, 1000);
 };
 
 // cuenta regresiva 1
-var fechaEvento1 = "Jan 8, 2024 11:00:00";
-var idElementoEvento1 = "countdown1";
-cuentaRegresiva(fechaEvento1, idElementoEvento1);
+var fecha_inicio_1 = "Nov 15, 2023 11:00:00";
+var fecha_fin_1 = "Dec 13, 2023 11:00:00";
+var id_evento_1 = "countdown1";
+cuentaRegresiva(fecha_inicio_1, fecha_fin_1, id_evento_1);
 
 // cuenta regresiva 2
-var fechaEvento2 = "Jan 10 2024 11:00:00";
-var idElementoEvento2 = "countdown2";
-cuentaRegresiva(fechaEvento2, idElementoEvento2);
+var fecha_inicio_2 = "Jan 8 2024 11:00:00";
+var fecha_fin_2 = "Jan 29 2024 11:00:00";
+var id_evento_2 = "countdown2";
+cuentaRegresiva(fecha_inicio_2, fecha_fin_2, id_evento_2);
 
 // cuenta regresiva 2
-var fechaEvento3 = "Feb 1, 2024 11:00:00";
-var idElementoEvento3 = "countdown3";
-cuentaRegresiva(fechaEvento3, idElementoEvento3);
+var fecha_inicio_3 = "Feb 6, 2024 11:00:00";
+var fecha_fin_3 = "Mar 12 2024 11:00:00";
+var id_evento_3 = "countdown3";
+cuentaRegresiva(fecha_inicio_3, fecha_fin_3, id_evento_3);
 
-// MODALES
+
+// VENTANAS MODALES
 
 function interaccionModal(ventana_modal, boton_abrir, boton_cerrar) {
   boton_abrir.addEventListener("click", () => {
@@ -148,6 +161,7 @@ var cerrar_odonto = document.getElementById("cerrar-odonto");
 colorTextoClickeable(abrir_odonto);
 
 interaccionModal(modal_odonto, abrir_odonto, cerrar_odonto);
+
 
 // RESERVAR ENTRADAS
 
