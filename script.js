@@ -76,7 +76,7 @@ var id_evento_3 = "countdown3";
 cuentaRegresiva(fecha_inicio_3, fecha_fin_3, id_evento_3);
 
 
-// VENTANAS MODALES
+// VENTANAS MODAL
 
 function interaccionModal(ventana_modal, boton_abrir, boton_cerrar) {
   boton_abrir.addEventListener("click", () => {
