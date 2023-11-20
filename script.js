@@ -185,13 +185,18 @@ function actualizarCantidad(boton_menos, boton_mas, cantidad_evento) {
 }
 
 // Ventana modal para reserva de entradas
-function interaccionModalEventos(ventana_modal, cancelar_evento, aceptar_evento, nombre_evento, apellido_evento, email_evento, texto_completar_datos, boton_abrir, cantidad_evento, evento) {
+function interaccionModalEventos(ventana_modal, cancelar_evento, aceptar_evento, nombre_evento, apellido_evento, email_evento, texto_completar_datos, boton_abrir, cantidad_evento, evento, titulo_modal_evento) {
   
   // Abrir ventana modal con boton Reservar
   boton_abrir.addEventListener("click", () => {
     document.body.classList.add('modal-abierto');
     ventana_modal.showModal();
     texto_completar_datos.textContent = "";
+    if (cantidad_evento.textContent == "1"){
+      titulo_modal_evento.textContent = "Reservar una entrada para " + evento.textContent;
+    } else {
+      titulo_modal_evento.textContent = "Reservar " + cantidad_evento.textContent + " entradas para " + evento.textContent;
+    }
   });
   
   // Salir de la ventana modal con boton Cancelar
@@ -209,27 +214,27 @@ function interaccionModalEventos(ventana_modal, cancelar_evento, aceptar_evento,
   aceptar_evento.addEventListener("click", () => {
 
     if (nombre_evento.value.trim() !== "" && apellido_evento.value.trim() !== "" && email_evento.value.trim() !== "") {
-      nombre_evento.value = '';
-      apellido_evento.value = '';
-      email_evento.value = '';
-      ventana_modal.close();
-
+    
       if (cantidad_evento.textContent == "1"){
         Toastify({
           text: "Ha reservado correctamente su entrada.",
-          duration: 3000,  // Duración en milisegundos
-          gravity: "top",  // Posición: "top" o "bottom"
-          position: "center"  // Posición horizontal: "left", "center", "right"
+          duration: 3000,  
+          gravity: "top",  
+          position: "center" 
         }).showToast();
       } else {
         Toastify({
           text: "Ha reservado correctamente sus entradas.",
-          duration: 3000,  // Duración en milisegundos
-          gravity: "top",  // Posición: "top" o "bottom"
-          position: "center"  // Posición horizontal: "left", "center", "right"
+          duration: 3000,  
+          gravity: "top",  
+          position: "center"  
         }).showToast();
       }
 
+      nombre_evento.value = '';
+      apellido_evento.value = '';
+      email_evento.value = '';
+      ventana_modal.close();
       cantidad_evento.textContent = "1";
       document.body.classList.remove('modal-abierto');
 
@@ -251,6 +256,7 @@ var boton_mas_1 = document.getElementById("boton-mas-1");
 var cantidad_evento_1 = document.getElementById("cantidad-evento-1");
 var evento_1 = document.getElementById("evento-1");
 var abrir_evento_1 = document.getElementById("boton-reservar-1");
+var titulo_modal_evento_1 = document.getElementById("modal-titulo-evento-1");
 
 var ventana_modal_2 = document.getElementById("modal-evento-2");
 var cancelar_evento_2 = document.getElementById("cancelar-evento-2");
@@ -264,9 +270,10 @@ var boton_mas_2 = document.getElementById("boton-mas-2");
 var cantidad_evento_2 = document.getElementById("cantidad-evento-2");
 var evento_2 = document.getElementById("evento-2");
 var abrir_evento_2 = document.getElementById("boton-reservar-2");
+var titulo_modal_evento_2 = document.getElementById("modal-titulo-evento-2");
 
 actualizarCantidad(boton_menos_1, boton_mas_1, cantidad_evento_1);
-interaccionModalEventos(ventana_modal_1, cancelar_evento_1, aceptar_evento_1, nombre_evento_1, apellido_evento_1, email_evento_1, texto_completar_datos_1, abrir_evento_1, cantidad_evento_1, evento_1);
+interaccionModalEventos(ventana_modal_1, cancelar_evento_1, aceptar_evento_1, nombre_evento_1, apellido_evento_1, email_evento_1, texto_completar_datos_1, abrir_evento_1, cantidad_evento_1, evento_1, titulo_modal_evento_1);
 
 actualizarCantidad(boton_menos_2, boton_mas_2, cantidad_evento_2);
-interaccionModalEventos(ventana_modal_2, cancelar_evento_2, aceptar_evento_2, nombre_evento_2, apellido_evento_2, email_evento_2, texto_completar_datos_2, abrir_evento_2, cantidad_evento_2, evento_2);
+interaccionModalEventos(ventana_modal_2, cancelar_evento_2, aceptar_evento_2, nombre_evento_2, apellido_evento_2, email_evento_2, texto_completar_datos_2, abrir_evento_2, cantidad_evento_2, evento_2, titulo_modal_evento_2);
